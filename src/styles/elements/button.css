@@ -26,10 +26,10 @@
     }
 
     &:disabled {
-      @apply bg-blue-disabled cursor-not-allowed;
+      @apply bg-white-disabled cursor-not-allowed;
 
       &:hover {
-        @apply bg-white-100;
+        @apply bg-white-disabled;
       }
     }
   }
@@ -106,10 +106,30 @@
     }
 
     &:disabled {
-      @apply bg-red-100 cursor-not-allowed;
+      @apply bg-red-disabled cursor-not-allowed;
 
       &:hover {
-        @apply bg-red-100;
+        @apply bg-red-disabled;
+      }
+    }
+  }
+
+  &.is-orange {
+    &:hover {
+      @apply bg-orange-200;
+    }
+
+    &.is-outlined {
+      &:hover {
+        @apply bg-orange-100 text-black-200;
+      }
+    }
+
+    &:disabled {
+      @apply bg-orange-disabled cursor-not-allowed;
+
+      &:hover {
+        @apply bg-orange-disabled;
       }
     }
   }
@@ -123,15 +143,15 @@
 
     &.is-outlined {
       &:hover {
-        @apply bg-black-100 text-white-100;
+        @apply bg-black-200 text-white-200;
       }
     }
 
     &:disabled {
-      @apply bg-white-100 cursor-not-allowed;
+      @apply bg-black-disabled cursor-not-allowed text-black-200;
 
       &:hover {
-        @apply bg-white-100;
+        @apply bg-black-disabled;
       }
     }
   }

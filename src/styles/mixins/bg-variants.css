@@ -19,6 +19,10 @@
     @apply bg-red-100;
   }
 
+  &.is-orange {
+    @apply bg-orange-100;
+  }
+
   &.is-purple {
     @apply bg-purple-100;
   }

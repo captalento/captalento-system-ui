@@ -13,6 +13,7 @@ export type Variant =
   | 'white'
   | 'blue'
   | 'red'
+  | 'orange'
   | 'green'
   | 'blue-dark'
   | 'gray'

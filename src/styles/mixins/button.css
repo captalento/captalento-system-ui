@@ -37,8 +37,12 @@
     @apply text-red-100 bg-transparent border-red-100 border-2;
   }
 
+  &.is-orange {
+    @apply text-orange-100 bg-transparent border-orange-100 border-2;
+  }
+
   &.is-black {
-    @apply text-black-100 bg-transparent border-black-100 border-2;
+    @apply text-black-200 bg-transparent border-black-200 border-2;
   }
 
   &:disabled {

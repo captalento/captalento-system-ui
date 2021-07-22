@@ -8,21 +8,39 @@ export default { title: 'Elements/Button' };
 export function Default() {
   return (
     <div className="grid gap-y-4">
-      <Button variant="white">Entrar</Button>
       <Button>Entrar</Button>
-      <Button variant="green">Entrar</Button>
       <Button variant="purple">Entrar</Button>
+      <Button variant="green">Entrar</Button>
       <Button variant="red">Entrar</Button>
-      <Button variant="black">Entrar</Button>
+      <Button variant="orange">Entrar</Button>
+      <div className="p-4 bg-white-100">
+        <Button variant="black">Entrar</Button>
+      </div>
+      <Button variant="white">Entrar</Button>
     </div>
   );
 }
 
 export function Disabled() {
   return (
-    <div>
+    <div className="grid gap-y-4">
       <Button disabled>Aguarde...</Button>
+      <Button disabled variant="purple">
+        Aguarde...
+      </Button>
       <Button disabled variant="green">
+        Aguarde...
+      </Button>
+      <Button disabled variant="red">
+        Aguarde...
+      </Button>
+      <Button disabled variant="orange">
+        Aguarde...
+      </Button>
+      <Button disabled variant="black">
+        Aguarde...
+      </Button>
+      <Button disabled variant="white">
         Aguarde...
       </Button>
     </div>
@@ -32,20 +50,25 @@ export function Disabled() {
 export function Outlineds() {
   return (
     <div className="grid gap-y-4">
-      <Button outlined variant="white">
-        Outlined
-      </Button>
       <Button outlined>Outlined</Button>
-      <Button outlined variant="green">
+      <Button outlined variant="purple">
         Outlined
       </Button>
-      <Button outlined variant="purple">
+      <Button outlined variant="green">
         Outlined
       </Button>
       <Button outlined variant="red">
         Outlined
       </Button>
-      <Button outlined variant="black">
+      <Button outlined variant="orange">
+        Outlined
+      </Button>
+      <div className="p-8 bg-white-100">
+        <Button outlined variant="black">
+          Outlined
+        </Button>
+      </div>
+      <Button outlined variant="white">
         Outlined
       </Button>
     </div>
