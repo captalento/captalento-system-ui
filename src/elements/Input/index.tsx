@@ -5,7 +5,7 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
-  id?: string;
+  id: string;
   placeholder: string;
   error?: string;
   icon?: React.ComponentType<IconBaseProps>;
