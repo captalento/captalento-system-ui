@@ -39,10 +39,9 @@
   }
 
   .field {
-    @apply outline-none;
+    @apply outline-none z-2;
     @apply w-full bg-transparent rounded-lg h-full border-0;
     @apply text-gray text-xs leading-tight pt-4 px-5;
-    z-index: 2;
 
     &.icon {
       @apply px-12;
