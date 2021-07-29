@@ -56,12 +56,19 @@ export function Input({
           {placeholder}
         </label>
 
-        {Icon ? <Icon size={26} className="absolute h-full ml-3" /> : null}
+        {Icon ? (
+          <Icon
+            style={{ zIndex: 2 }}
+            size={26}
+            className="absolute h-full ml-3"
+          />
+        ) : null}
 
         {type === 'password' ? (
           <label
+            style={{ zIndex: 2 }}
             htmlFor={id}
-            className="flex items-center absolute h-full right-0 mr-3 focus:outline-none"
+            className="flex items-center cursor-pointer absolute h-full right-0 mr-3 focus:outline-none"
             onClick={handleClick}
           >
             {type === 'password' && !showHide && (
