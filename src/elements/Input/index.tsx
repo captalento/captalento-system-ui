@@ -56,12 +56,12 @@ export function Input({
           {placeholder}
         </label>
 
-        {Icon ? <Icon size={26} className="absolute h-full ml-3" /> : null}
+        {Icon ? <Icon size={26} className="absolute z-2 h-full ml-3" /> : null}
 
         {type === 'password' ? (
           <label
             htmlFor={id}
-            className="flex items-center absolute h-full right-0 mr-3 focus:outline-none"
+            className="flex z-2 items-center cursor-pointer absolute h-full right-0 mr-3 focus:outline-none"
             onClick={handleClick}
           >
             {type === 'password' && !showHide && (
